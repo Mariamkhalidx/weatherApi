@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarke</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!--navbar-start-->
+    <section class="main-nav fixed-top mt-4">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="branding text-decoration-none" href="/">
+                    <img src="images/logo@2x.png" alt="" class="logo mx-3" width="64" height="38">
+                    <div class="logo-type">
+                        <h1 class="fs-5 text-white">Weather</h1>
+                        <small class=" fw-lighter text-white">tagline goes here</small>
+                    </div>
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#services">Live cameras</a>
+                  </li> 
+                   <li class="nav-item">
+                    <a class="nav-link text-white" href="#works">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#contact">Contact</a>
+                  </li>
+                
+                </ul>
+             
+              </div>
+            </div>
+          </nav>
+    </section>
+        <!--navbar-end-->
+<!--main-->
+<section id="home" >
+<div class="header">
+    <br>
+    <br>
+    <div class="header-layer my-6">
+<div class="container text-white text-center ">
+    <form class="d-flex " role="search">
+        <input class="form-control me-2 rounded-pill py-3 main" type="search" placeholder="find your location...." aria-label="Search" id="search" >
+        <button class="btn btn-primary py-2 px-4 rounded-pill main-btn " type="submit">Find</button>
+      </form>
+    </div>
+   
+</div>
+<div class="container">
+<div class="status mt-5">
+<div class="row">
+<!--today-->
+<div id="todayRow"></div>
+
+<!--tom-->
+<div class="col-md-4 m-0 rounded-4 bg-dark-gray">
+  <div class="d-flex justify-content-between py-2 px-3 text-white  bg-dark
+    " id="tom-date">
+    <p class="my-auto" id="tom-date-name">monday</p>
+
+  </div>
+  <div class="text-start px-3 py-3 pt-5" id="tom">
+    <div class="text-center">
+      <img id="tom-img" src="images/113 (1).png" alt="">
+
+      <h3 class="fs-1 fw-bolder d-block">
+        
+        <span id="tom-min-temp">20</span>
+        <span><sup>o</sup>c</span>
+    </h3>
+      <span class="fs-6 fw-lighter">
+        <span id="tom-max-temp">20</span>
+        <span><sup>o</sup>c</span>
+      </span>
+      <p id="tom-text" class="fs-5 text-primary">sunny</p>
+
+    </div>
+
+
+
+  </div>
+
+</div>
+<!--after-tom-->
+<div class="col-md-4 m-0 rounded-4 bg-light-gray ">
+<div class="d-flex justify-content-between py-2 px-3 text-white  bg-small-nav
+" id="after-tom-date">
+<p class="my-auto" id="after-tom-date-name">monday</p>
+
+</div>
+<div class="text-start px-3 py-3 pt-5" id="tom">
+<div class="text-center">
+  <img id="after-tom-img" src="images/113 (1).png" alt="">
+
+  <h3 class="fs-1 fw-bolder d-block">
+    
+    <span id="after-tom-temp">20</span>
+    <span><sup>o</sup>c</span>
+</h3>
+  <span class="fs-6 fw-lighter">
+    <span id="after-tom-temp">20</span>
+    <span><sup>o</sup>c</span>
+  </span>
+  <p id="after-tom-text" class="fs-5 text-primary">sunny</p>
+
+</div>
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+</div>
+
+
+
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="bg-light-gray ">
+<div class="d-flex mt-5 pt-5 ">
+<form class="d-flex mt-5 py-2 px-5  w-100" role="search">
+    <input class="form-control py-2 rounded-pill" type="search" placeholder="Enter your email to subscribe" aria-label="Search">
+    <button class="btn btn-primary rounded-pill" type="submit">subscribe</button>
+  </form>
+  <div class="social-icon d-flex justify-content-center mt-5 py-2 pe-5 flex-shrink-1">
+    <a href="#0">
+      <span class="icon-border"><i class="fa fa-brands fa-facebook-f" aria-hidden="true"></i></span>
+    </a>
+    <a href="#0">
+      <span class="icon-border"><i class="fa fa-brands fa-twitter" aria-hidden="true"></i></span>
+    </a>
+    <a href="#0">
+      <span class="icon-border"><i class="fa fa-brands fa-linkedin-in" aria-hidden="true"></i></span>
+    </a>
+    <a href="#0">
+      <span class="icon-border"><i class="fa fa-brands fa-behance" aria-hidden="true"></i></span>
+    </a>
+    <a href="#0">
+      <span class="icon-border"><i class="fa-brands fa-square-youtube" aria-hidden="true"></i></span>
+    </a>
+  </div>
+</div>
+<br>
+<br>
+<small class="fw-lighter text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</small>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
